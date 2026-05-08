@@ -75,6 +75,7 @@ Inspired by AI assistants in popular fiction, this system includes specialized a
 - Speaker identification
 - Emotion detection in voice
 - Wake-word detection
+- multiple voice type (female, male, child, character etc)
 
 ### 🧠 Intelligent Processing
 - Intent recognition with >92% accuracy
