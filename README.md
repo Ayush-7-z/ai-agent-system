@@ -122,37 +122,37 @@ Inspired by AI assistants in popular fiction, this system includes specialized a
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                  USER INTERACTION LAYER                     │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐        │
-│ │ Voice Input  │ │ Text Input   │ │ Gesture/UI   │        │
-│ │(Microphone)  │ │ (Keyboard)   │ │  (Touch)     │        │
-│ └──────┬───────┘ └──────┬───────┘ └──────┬───────┘        │
+│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐          │
+│ │ Voice Input  │ │ Text Input   │ │ Gesture/UI   │          │
+│ │(Microphone)  │ │ (Keyboard)   │ │  (Touch)     │          │
+│ └──────┬───────┘ └──────┬───────┘ └──────┬───────┘          │
 └─────────┼──────────────────┼──────────────────┼─────────────┘
           │                  │                  │
 ┌─────────┼──────────────────┼──────────────────┼─────────────┐
 │ AUDIO PROCESSING PIPELINE                                   │
-│ Voice Detection → Noise Cancellation → Transcription       │
-│ (WebRTC VAD)     (Spectral Sub.)      (Whisper/VOSK)      │
+│ Voice Detection → Noise Cancellation → Transcription        │
+│ (WebRTC VAD)     (Spectral Sub.)      (Whisper/VOSK)        │
 └─────────────────────┬───────────────────────────────────────┘
                       │
 ┌─────────────────────┴───────────────────────────────────────┐
 │ NATURAL LANGUAGE PROCESSING LAYER                           │
-│ Intent Recognition → Entity Extraction → Context           │
-│ (BERT/RoBERTa)       (spaCy/NLTK)       (History)          │
+│ Intent Recognition → Entity Extraction → Context            │
+│ (BERT/RoBERTa)       (spaCy/NLTK)       (History)           │
 └─────────────────────┬───────────────────────────────────────┘
                       │
 ┌─────────────────────┴───────────────────────────────────────┐
 │ AGENT DECISION LAYER                                        │
-│ Intent Router → Capability Dispatcher → Agent Brain (LLM)  │
+│ Intent Router → Capability Dispatcher → Agent Brain (LLM)   │
 └─────────────────────┬───────────────────────────────────────┘
                       │
 ┌─────────────────────┴───────────────────────────────────────┐
-│ CAPABILITY & ACTION EXECUTION LAYER                        │
-│ File Ops │ Device Ops │ Communication │ System Control    │
+│ CAPABILITY & ACTION EXECUTION LAYER                         │
+│ File Ops │ Device Ops │ Communication │ System Control      │
 └─────────────────────┬───────────────────────────────────────┘
                       │
 ┌─────────────────────┴───────────────────────────────────────┐
 │ RESPONSE GENERATION LAYER                                   │
-│ Context Building → LLM Generation → Quality Check          │
+│ Context Building → LLM Generation → Quality Check           │
 └─────────────────────┬───────────────────────────────────────┘
                       │
 ┌─────────────────────┴───────────────────────────────────────┐
@@ -162,10 +162,10 @@ Inspired by AI assistants in popular fiction, this system includes specialized a
 
 ┌─────────────────────────────────────────────────────────────┐
 │ SUPPORTING SYSTEMS (Cross-Layer)                            │
-│ ┌──────────┐ ┌──────────────┐ ┌──────────────┐            │
-│ │ Memory & │ │ Logging &    │ │ Analytics &  │            │
-│ │ Context  │ │ Monitoring   │ │ Feedback     │            │
-│ └──────────┘ └──────────────┘ └──────────────┘            │
+│ ┌──────────┐ ┌──────────────┐ ┌──────────────┐              │
+│ │ Memory & │ │ Logging &    │ │ Analytics &  │              │
+│ │ Context  │ │ Monitoring   │ │ Feedback     │              │
+│ └──────────┘ └──────────────┘ └──────────────┘              │
 └─────────────────────────────────────────────────────────────┘
 ```
 
